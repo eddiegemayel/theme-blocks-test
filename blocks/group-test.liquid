@@ -1,0 +1,19 @@
+<div
+  class="group-test-block group-test-block--{{ block.id }} layout layout--{{ block.settings.direction }} color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
+  {% content_for "blocks" %}
+</div>
+
+{% schema %}
+{
+  "name": "Group Test",
+  "tag": null,
+  "blocks": [{ "type": "@theme" }, { "type": "@app" }],
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Width is automatically optimized for mobile."
+    }
+  ],
+  "presets": []
+}
+{% endschema %}
