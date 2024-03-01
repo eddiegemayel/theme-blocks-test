@@ -39,12 +39,117 @@
                 "icon": "none",
                 "icon_position": "left"
               }
+            },
+            "group_zgh87r": {
+              "type": "group",
+              "settings": {
+                "direction": "row",
+                "justify_content": "flex-start",
+                "color_scheme": "",
+                "width": 100,
+                "padding": 16
+              },
+              "blocks": {
+                "collapsible_row_4gHMTb": {
+                  "type": "collapsible-row",
+                  "settings": {
+                    "summary": "Collapsible row",
+                    "icon": "check_mark"
+                  }
+                },
+                "group_9giXXq": {
+                  "type": "group",
+                  "settings": {
+                    "direction": "row",
+                    "justify_content": "flex-start",
+                    "color_scheme": "",
+                    "width": 100,
+                    "padding": 16
+                  },
+                  "blocks": {
+                    "group_N9XViF": {
+                      "type": "group",
+                      "settings": {
+                        "direction": "column",
+                        "justify_content": "flex-start",
+                        "color_scheme": "",
+                        "width": 25,
+                        "padding": 0
+                      },
+                      "blocks": {
+                        "image_wheKXC": {
+                          "type": "image",
+                          "settings": {
+                            "width": 100,
+                            "ratio": "1"
+                          }
+                        },
+                        "group_BbtbfG": {
+                          "type": "group",
+                          "settings": {
+                            "direction": "row",
+                            "justify_content": "flex-start",
+                            "color_scheme": "",
+                            "width": 100,
+                            "padding": 0
+                          },
+                          "blocks": {
+                            "heading_6byzzB": {
+                              "type": "heading",
+                              "settings": {
+                                "heading": "Column",
+                                "heading_size": "h3",
+                                "alignment": "start"
+                              }
+                            },
+                            "text_aXdANY": {
+                              "type": "text",
+                              "settings": {
+                                "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+                                "text_style": "",
+                                "alignment": "start"
+                              }
+                            },
+                            "group_4kqgtn": {
+                              "type": "group",
+                              "settings": {
+                                "direction": "row",
+                                "justify_content": "flex-start",
+                                "color_scheme": "",
+                                "width": 100,
+                                "padding": 16
+                              }
+                            }
+                          },
+                          "block_order": [
+                            "heading_6byzzB",
+                            "text_aXdANY",
+                            "group_4kqgtn"
+                          ]
+                        }
+                      },
+                      "block_order": [
+                        "image_wheKXC",
+                        "group_BbtbfG"
+                      ]
+                    }
+                  },
+                  "block_order": [
+                    "group_N9XViF"
+                  ]
+                }
+              },
+              "block_order": [
+                "collapsible_row_4gHMTb",
+                "group_9giXXq"
+              ]
             }
           },
           "block_order": [
             "a472dc2a-4c3b-41a8-8cec-3bd05ab1b009",
             "c5ad2ddb-b92c-4478-9b6d-db611df876d2",
-            "0f15950c-52b8-437c-ab09-a30df142726a"
+            "0f15950c-52b8-437c-ab09-a30df142726a",
+            "group_zgh87r"
           ]
         }
       },
