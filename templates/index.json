@@ -5,7 +5,20 @@
       "blocks": {
         "group_test_jCgmcM": {
           "type": "group-test",
-          "settings": {}
+          "settings": {},
+          "blocks": {
+            "heading_3HLaTn": {
+              "type": "heading",
+              "settings": {
+                "heading": "Heading",
+                "heading_size": "h2",
+                "alignment": "start"
+              }
+            }
+          },
+          "block_order": [
+            "heading_3HLaTn"
+          ]
         }
       },
       "block_order": [
