@@ -3,53 +3,13 @@
     "custom_section_QG4FP9": {
       "type": "custom-section",
       "blocks": {
-        "group_nAUkz8": {
-          "type": "group",
-          "settings": {
-            "direction": "row",
-            "justify_content": "center",
-            "color_scheme": "",
-            "width": 75,
-            "padding": 16
-          },
-          "blocks": {
-            "heading_xFLBNc": {
-              "type": "heading",
-              "settings": {
-                "heading": "Heading",
-                "heading_size": "h1",
-                "alignment": "start"
-              }
-            },
-            "text_6mDN8P": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
-                "text_style": "",
-                "alignment": "center"
-              }
-            },
-            "link_qfewFR": {
-              "type": "link",
-              "settings": {
-                "link": "",
-                "label": "Button label",
-                "style_class": "button",
-                "open_in_new_tab": false,
-                "icon": "none",
-                "icon_position": "left"
-              }
-            }
-          },
-          "block_order": [
-            "heading_xFLBNc",
-            "text_6mDN8P",
-            "link_qfewFR"
-          ]
+        "group_test_jCgmcM": {
+          "type": "group-test",
+          "settings": {}
         }
       },
       "block_order": [
-        "group_nAUkz8"
+        "group_test_jCgmcM"
       ],
       "settings": {
         "direction": "column",
