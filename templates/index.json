@@ -86,6 +86,7 @@
                         },
                         "group_BbtbfG": {
                           "type": "group",
+                          "disabled": true,
                           "settings": {
                             "direction": "row",
                             "justify_content": "flex-start",
