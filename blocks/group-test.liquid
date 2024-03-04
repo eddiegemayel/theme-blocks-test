@@ -4,8 +4,15 @@
 
   {% for field in shop.metaobjects.show_date.values %}
     {{ field.date.value }}
+    {% assign closeDateSec = field.date.value | date: "%s" | minus: 0 %}
   {% endfor %}
-  
+
+  {% assign nowDateSec = "now" | date: "%s" | minus: 0 %}
+  {{ nowDateSec }} {{ closeDateSec }}
+  {% if nowDateSec < closeDateSec %}
+    <p>TEST</p>
+  {% endif %}
+
   {% content_for "blocks" %}
 </div>
 
