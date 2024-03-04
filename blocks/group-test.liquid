@@ -1,6 +1,11 @@
 <div
   class="group-test-block group-test-block--{{ block.id }} layout layout--{{ block.settings.direction }} color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
   Hello
+
+  {% for field in shop.metaobjects.show_date.values %}
+    {{ field.date.value }}
+  {% endfor %}
+  
   {% content_for "blocks" %}
 </div>
 
@@ -8,7 +13,7 @@
 {
   "name": "Group Test",
   "tag": null,
-  "blocks": [{ "type": "@theme" }, { "type": "@app" }],
+  "blocks": [{ "type": "@theme" }],
   "settings": [
     {
       "type": "paragraph",
