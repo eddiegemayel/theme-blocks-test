@@ -3,14 +3,37 @@
     "custom_section_QG4FP9": {
       "type": "custom-section",
       "blocks": {
+        "group_test_cxzX74": {
+          "type": "group-test",
+          "settings": {
+            "hide_based_on_date": false,
+            "show_based_on_date": true
+          },
+          "blocks": {
+            "heading_nfTe3X": {
+              "type": "heading",
+              "settings": {
+                "heading": "Show",
+                "heading_size": "h2",
+                "alignment": "start"
+              }
+            }
+          },
+          "block_order": [
+            "heading_nfTe3X"
+          ]
+        },
         "group_test_jCgmcM": {
           "type": "group-test",
-          "settings": {},
+          "settings": {
+            "hide_based_on_date": true,
+            "show_based_on_date": false
+          },
           "blocks": {
             "heading_3HLaTn": {
               "type": "heading",
               "settings": {
-                "heading": "Heading",
+                "heading": "Hide",
                 "heading_size": "h2",
                 "alignment": "start"
               }
@@ -22,6 +45,7 @@
         }
       },
       "block_order": [
+        "group_test_cxzX74",
         "group_test_jCgmcM"
       ],
       "settings": {

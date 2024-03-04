@@ -3,18 +3,43 @@
   Hello
 
   {% for field in shop.metaobjects.show_date.values %}
-    {{ field.date.value }}
     {% assign closeDateSec = field.date.value | date: "%s" | minus: 0 %}
   {% endfor %}
 
   {% assign nowDateSec = "now" | date: "%s" | minus: 0 %}
-  {{ nowDateSec }} {{ closeDateSec }}
-  {% if nowDateSec < closeDateSec %}
-    <p>TEST</p>
-  {% endif %}
 
   {% content_for "blocks" %}
 </div>
+
+<style>
+  {% if block.settings.hide_based_on_date %}
+    {% if nowDateSec > closeDateSec %}
+      .group-test-block--{{ block.id }}  {
+        display: none;
+        visibility: hidden;
+      }
+    {% else %}
+      .group-test-block--{{ block.id }}  {
+        display: block;
+        visibility: visible;
+      }
+    {% endif %}
+  {% endif %}
+
+  {% if block.settings.show_based_on_date %}
+    {% if nowDateSec > closeDateSec and block.settings.show_based_on_date %}
+      .group-test-block--{{ block.id }} {
+        display: block;
+        visibility: visible;
+      }
+    {% else %}
+      .group-test-block--{{ block.id }}  {
+        display: none;
+        visibility: hidden;
+      }
+    {% endif %}
+  {% endif %}
+</style>
 
 {% schema %}
 {
@@ -23,8 +48,16 @@
   "blocks": [{ "type": "@theme" }],
   "settings": [
     {
-      "type": "paragraph",
-      "content": "Width is automatically optimized for mobile."
+      "type": "checkbox",
+      "id": "hide_based_on_date",
+      "label": "Hide if date passes show_date Metaobject",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_based_on_date",
+      "label": "Show if date passes show_date Metaobject",
+      "default": false
     }
   ],
   "presets": [
